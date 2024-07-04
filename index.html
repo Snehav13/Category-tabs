@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="product-page">
+        <div class="product-images">
+            <img id="main-image" src="./Images/image1.jpeg" alt="Embrace Sideboard">
+            <div class="thumbnails">
+                <img src="./Images/image2.jpg" alt="Thumbnail 1">
+                <img src="./Images/image3.jpg" alt="Thumbnail 2">
+                <img src="./Images/image4.jpg" alt="Thumbnail 3">
+                <img src="./Images/image5.jpg" alt="">
+            </div>
+        </div>
+        <div class="product-info">
+            <h2 id="vendor">Marmeto</h2>
+            <h1 id="title">Embrace Sideboard</h1>
+            <p class="price">
+                <span id="current-price">$12999.00</span>
+                <span id="compare-price">$19999.00</span>
+                <span id="percentage-off">35% Off</span>
+            </p>
+            <div class="selectors">
+                <label for="color">Choose a Color:</label>
+                <select id="color-selector">
+                    <option value="color1">Color 1</option>
+                    <option value="color2">Color 2</option>
+                </select>
+
+                <label for="size">Choose a Size:</label>
+                <select id="size-selector">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">Extra Large</option>
+                    <option value="xxl">XXL</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <div class="quantity-selector">
+                    <button id="decrease-qty">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button id="increase-qty">+</button>
+                </div>
+            </div>
+            <button id="add-to-cart">Add to Cart</button>
+            <p id="cart-message" style="display: none;"></p>
+            <div class="description">
+                The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
